@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfPageControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        DataContext="{Binding Source={StaticResource Locator},Path=Main}"
+        xmlns:local="clr-namespace:WpfPageControlDemo"
+        mc:Ignorable="d"
+        Title="主窗口">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" HorizontalAlignment="Center">
+            <Button Width="200" Height="44" 
+                    Background="#3482E7" FontSize="20" FontFamily="Microsoft YaHei UI" 
+                    Content="命令驱动分页测试" 
+                    Click="CmdBtn_Click"/>
+            <Button Width="200" Height="44" 
+                    Background="White" Margin="20,0,0,0" FontSize="20" FontFamily="Microsoft YaHei UI" 
+                    Content="事件驱动分页测试" 
+                    Click="EvtBtn_Click"/>
+        </DockPanel>
+    </DockPanel>
+</Window>
