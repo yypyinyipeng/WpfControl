@@ -27,7 +27,6 @@ namespace WpfPageControlDemo.Windows
             DataProvider dataProvider = new DataProvider();
             ResultMessage<User> result = dataProvider.GetPagingData();
             DataGridTest.ItemsSource = result.Items;
-            DataGridTest.DataContext = result.Items;
             this.page.ShowPages(this.DataGridTest, result.Pagination.Total, result.Pagination.Current, 20);
             this.page.Query += (page, size) => dataProvider.GetPagingData(page, size).Items;
         }
