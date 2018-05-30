@@ -13,5 +13,6 @@ namespace WpfPageControlDemo
     /// </summary>
     public partial class App : Application
     {
+        //测试
     }
 }
