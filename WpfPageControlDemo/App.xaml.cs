@@ -13,6 +13,6 @@ namespace WpfPageControlDemo
     /// </summary>
     public partial class App : Application
     {
-        //测试feature
+        //测试feature合并问题
     }
 }
